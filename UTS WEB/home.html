@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <style>
+    
+        .Touch {
+            text-decoration: none;
+            font-size: 40px;
+            margin-top: 80px;
+            color: rgb(0, 106, 255);
+            background-color: aliceblue;
+        }
+
+        .container {
+            font-size: 20px;
+            text-align: center;
+            background-color: rgb(56, 52, 52);
+            width: 100%;
+            margin: auto;
+        }
+
+        
+        div {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Lato";
+        }
+
+        .header-list li {
+            list-style: none;
+
+        }
+
+        .container {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+
+        header {
+            background-color: rgb(54, 50, 50);
+            color: #fff;
+            height: 90px;
+            width: 100%;
+            padding-left: 20px;
+        }
+
+        .header-logo {
+            float: left;
+            font-size: 36px;
+            padding: 20px 0;
+            letter-spacing: 10px;
+        }
+
+       
+        .header-list li {
+            float: right;
+            padding: 33px 20px;
+            height: 24px;
+        }
+
+        .header-list a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+       
+
+        
+
+     
+
+        .film{
+            border-bottom: 5px solid rgb(149, 103, 30) ;
+            margin-bottom:10px ;
+            padding: 20px 0;
+            cursor: pointer;
+        }
+
+        .film:hover {
+            transform: scale(1.1); 
+            transition: 0.3s ;
+            border-radius: 40%;
+        }
+
+
+        .film h1{
+            text-align: center;
+            
+        }
+
+        .sinopsis{
+            transition: 0.4s;
+            display: none;
+            text-align: center;
+            margin: 0 70px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div class="header-logo">UTS WEB</div>
+            <div class="header-list">
+                <ul>
+                    <li><a href="DOM.html">DOM</a></li>
+                    <li><a href="layout.html">LAYOUT</a></li>
+                    <li><a href="identitas.html">PROFIL</a> </li>
+                    <li><a href="home.html">HOME</a> </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="gambar" style="width: 100%; height: 1000px; background-image: url(Backgroundgenshin.png);
+    background-size: cover;
+    background-position:center;">
+
+    </div>
+    <!-- Daftar Film Start -->
+
+    <div class="daftarFilm">
+
+        <div class="film">
+            <h1>The Nun</h1>
+            <p class="sinopsis">When a young nun at a cloistered abbey in Romania takes her own life, a priest with a haunted past and a novitiate on the threshold of her final vows are sent by the Vatican to investigate. Together, they uncover the order's unholy secret. Risking not only their lives but their faith and their very souls, they confront a malevolent force in the form of a demonic nun.</p>
+        </div>
+
+        <div class="film">
+            <h1>Pengabdi Setan</h1>
+            <p class="sinopsis">After dying from a strange illness that she suffered for three years, a mother returns home to pick up her children.</p>
+        </div>
+
+        <div class="film">
+            <h1>Suzume</h1>
+            <p class="sinopsis">As the skies turn red and the planet trembles, Japan stands on the brink of disaster. However, a determined teenager named Suzume sets out on a mission to save her country. Able to see supernatural forces that others cannot, it's up to her to close the mysterious doors that are spreading chaos across the land. A perilous journey awaits as the fate of Japan rests on her shoulders.</p>
+        </div>
+
+        <div class="film">
+            <h1>Pee Mak</h1>
+            <p class="sinopsis">Mak returns from a war with four comrades he has invited to meet his beautiful wife and infant son. But Mak's friends begin to realize that Mak's family is really dead.</p>
+        </div>
+
+        <div class="film">
+            <h1>Puss In Boots</h1>
+            <p class="sinopsis">just named a hero for saving a woman from a charging bull -- is run out of town on suspicion of bank robbery, even though the real villain is Puss' friend, Humpty Dumpty (Zach Galifianakis). Though there is still animosity between them, Puss and Humpty reunite to steal a goose that lays golden eggs. Joining them for the adventure of nine lifetimes is notorious cat burglar, Kitty Softpaws (Salma Hayek).</p>
+        </div>
+    </div>
+
+    <!-- Daftar Film End -->
+    <script src="home.js"></script>
+</body>
+</html>

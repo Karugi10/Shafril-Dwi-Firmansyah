@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LAYOUT</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #87CEEB; 
+            color: #ffffff; 
+            text-align: center;
+            padding: 10px;
+        }
+       
+        nav {
+            background-color: #4d963f; 
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+        button {
+            background-color: #87CEEB;
+            border: none;
+            color: #666666;
+            cursor: pointer;
+            margin-left: 15px; /* Jarak antara setiap tombol menu navigasi */
+            border-radius: 5px; /* Membuat sudut tombol menjadi tumpul */
+            padding: 5px 10px; /* Padding tombol */
+        }
+     
+        body {
+            margin: 0;
+        }
+
+        ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+       
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin: 0px;
+        }
+
+        
+        .left-column {
+            background-color: #8A2BE2;
+            flex-basis: 30%;
+            padding: 20px;
+            
+        }
+     
+        .left-column .leftbox1 {
+            background-color: #000080;
+            color: #ffffff;
+            margin-top: 50px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .left-column .leftbox2 {
+            background-color: #00FFFF;
+            color: #ffffff;
+            margin-top: 50px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+
+        .left-column .leftbox3 {
+            background-color: #FFFF00;
+            color: #ffffff;
+            margin-top: 50px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            margin-bottom: 50px;
+        }
+
+       
+        .center-column {
+            background-color: #ff4500; 
+            flex-basis: 35%; 
+            padding: 20px;
+            margin: 0px;
+        }
+
+        .center-column .centerbox1 {
+            background-color: 	#663399;
+            color: #ffffff;
+            margin-top: 50px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .center-column .centerbox2 {
+            background-color: #DA70D6;
+            color: #ffffff;
+            margin-top: 50px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .center-column .centerbox3{
+            background-color: 	#40E0D0;
+            color: #ffffff;
+            margin-top: 50px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        
+        .right-column {
+            background-color: 	#4B0082; 
+            flex-basis: 30%;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .right-column .rightbox1 {
+            background-color: 	#1E90FF;
+            color: #ffffff;
+            margin-top: 100px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+        .right-column .rightbox2 {
+            background-color:#7FFF00;
+            color: #ffffff;
+            margin-top: 50px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            margin-top: 100px;
+        }
+
+        footer {
+        background-color: #333;
+        color: #ffffff;
+        text-align: center;
+        padding: 5px;
+        bottom: 0;
+        width: 100%;
+         }
+
+
+
+
+
+
+
+
+         .header-list li {
+            list-style: none;
+
+        }
+
+        .container2 {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+
+        header {
+            background-color: rgb(54, 50, 50);
+            color: #fff;
+            height: 90px;
+            width: 100%;
+            padding-left: 20px;
+        }
+
+        .header-logo {
+            float: left;
+            font-size: 36px;
+            padding: 20px 0;
+            letter-spacing: 10px;
+        }
+
+       
+        .header-list li {
+            float: right;
+            padding: 33px 20px;
+            height: 24px;
+        }
+
+        .header-list a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container2">
+            <div class="header-logo">UTS WEB</div>
+            <div class="header-list">
+                <ul>
+                    <li><a href="DOM.html">DOM</a></li>
+                    <li><a href="layout.html">LAYOUT</a></li>
+                    <li><a href="identitas.html">PROFIL</a> </li>
+                    <li><a href="home.html">HOME</a> </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <header class="header">
+        <h1>header</h1>
+    </header>
+
+    <nav>
+        <h2>Nav</h2>
+    </nav>
+
+    <div class="container">
+        <div class="left-column">
+            <div class="leftbox1">left 1</div>
+            <div class="leftbox2">left 2</div>
+            <div class="leftbox3">left 3</div>
+        </div>
+        
+        <div class="center-column">
+            <div class="centerbox1">center 1</div>
+            <div class="centerbox2">center 2</div>
+            <div class="centerbox3">center 3</div>
+        </div>
+        
+        <div class="right-column">
+            <div class="rightbox1">right 1</div>
+            <div class="rightbox2">right 2</div>
+        </div>
+    </div>
+    <footer>
+        <p>Footer</p>
+    </footer>
+    
+    <script src="layout.js"></script>
+</body>
+</html>

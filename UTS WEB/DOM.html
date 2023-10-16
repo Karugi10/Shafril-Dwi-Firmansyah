@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+          *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+         .header-list li {
+            list-style: none;
+
+        }
+
+        .container {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+
+        header {
+            background-color: rgb(54, 50, 50);
+            color: #fff;
+            height: 90px;
+            width: 100%;
+            padding-left: 20px;
+        }
+
+        .header-logo {
+            float: left;
+            font-size: 36px;
+            padding: 20px 0;
+            letter-spacing: 10px;
+        }
+
+       
+        .header-list li {
+            float: right;
+            padding: 33px 20px;
+            height: 24px;
+        }
+
+        .header-list a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .banner {
+            background-color: blue;
+            width: 100%;
+            height: 150px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .input {
+            width: 30%;
+        }
+        .input input{
+             border: 2px solid red;
+            border-radius: 20px;
+            text-align: center;
+            width: 70%;
+            height: 40px;
+            margin: 15px 0;
+        }
+        .setList li {
+            border: 2px solid goldenrod;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 20px ;
+            width: 40%;
+            text-align: center;
+        }
+        .Color {
+            width: 70%;
+        }
+        .ColorList li {
+            text-align: center;
+            border: 1px solid peachpuff;
+            margin: 0 10px;
+            height: 40px;
+        }
+        footer {
+            position: absolute;
+            bottom: 0;
+            background-color: darkgreen;
+            width: 100%;
+            height: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-logo">UTS WEB</div>
+            <div class="header-list">
+                <ul>
+                    <li><a href="DOM.html">DOM</a></li>
+                    <li><a href="layout.html">LAYOUT</a></li>
+                    <li><a href="identitas.html">PROFIL</a> </li>
+                    <li><a href="home.html">HOME</a> </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="banner"></div>
+    <div class="content">
+        <div class="input">
+            <input type="text">
+            <ul class="setList">
+                <li>Set List BackColor</li>
+                <li>Add New Color to List</li>
+                <li>Add Footer</li>
+            </ul>
+        </div>
+        <div class="Color">
+            <ul class="ColorList">
+                <li>Red</li>
+                <li>Blue</li>
+                <li>Yellow</li>
+                <li>Purple</li>
+                <li>Pink</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    // Ambil elemen-elemen yang dibutuhkan
+    var setListBackColor = document.querySelector(".setList li:nth-child(1)");
+    var addNewColorToList = document.querySelector(".setList li:nth-child(2)");
+    var addFooter = document.querySelector(".setList li:nth-child(3)");
+    var colorList = document.querySelector(".ColorList");
+    var input = document.querySelector("input");
+
+    // Tambahkan event listener ke elemen "Set List BackColor"
+    setListBackColor.addEventListener("click", function() {
+        var colorName = input.value.toLowerCase();
+        var colorItems = colorList.querySelectorAll("li");
+        colorItems.forEach(function(item) {
+            if (item.textContent.toLowerCase() === colorName) {
+                item.style.backgroundColor = colorName; // Mengubah warna latar belakang item yang sesuai
+            }
+        });
+    });
+
+    // Tambahkan event listener ke elemen "Add New Color to List"
+    addNewColorToList.addEventListener("click", function() {
+        var newColor = input.value;
+        var newColorItem = document.createElement("li");
+        newColorItem.textContent = newColor;
+        colorList.appendChild(newColorItem);
+        input.value = ""; // Kosongkan input setelah menambahkan warna baru
+    });
+
+    // Tambahkan event listener ke elemen "Add Footer"
+    addFooter.addEventListener("click", function() {
+        var footer = document.createElement("footer");
+        footer.textContent = "Footer";
+        document.body.appendChild(footer);
+    });
+});
+
+    </script>
+    
+    
+</body>
+</html>
